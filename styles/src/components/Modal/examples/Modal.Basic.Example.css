@@ -1,0 +1,39 @@
+/*
+  Your use of the content in the files referenced here is subject to the terms of the license at http://aka.ms/fabric-assets-license
+*/
+/*
+    Common CSS property mixins with support for RTL.
+    Use these mixins when you want to automatically create RTL versions of your properties.
+    They are in alphabetical order (a-z).
+*/
+/* Base slots */
+/* Input controls */
+/* Buttons */
+/* Menus */
+/* Lists */
+/* Base slots */
+/* Input controls */
+/* Buttons */
+/* Menus */
+/* Lists */
+:global .ms-modalExample-container {
+  height: 80vh;
+  width: 80vw;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: stretch; }
+  :global .ms-modalExample-container .ms-modalExample-header {
+    flex: 1 1 auto;
+    background: "[theme:themePrimary, default: #0078d4]";
+    color: #fff;
+    display: flex;
+    align-items: center;
+    font-size: 28px;
+    font-weight: 100;
+    font-weight: 600;
+    padding: 0 28px;
+    min-height: 40px; }
+  :global .ms-modalExample-container .ms-modalExample-body {
+    flex: 4 4 auto;
+    padding: 5px 28px;
+    overflow-y: auto; }

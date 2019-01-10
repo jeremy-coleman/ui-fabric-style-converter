@@ -1,0 +1,46 @@
+{
+  "name": "ui-fabric-style-converter",
+  "version": "0.0.1",
+  "description": "dom styles to fabric jss",
+  "main": "lib/index.js",
+  "typings": "lib/index.d.ts",
+  "types": "lib/index.d.ts",
+  "files": ["lib"],
+  "scripts": {
+    "tsdev": "tsc -w --noEmit",
+    "build": "yarn rollit && yarn gendts",
+    "tsout": "tsc",
+    "transpile-temp": "tsc --outDir _temp",
+    "rollit": "rollup -c rollup.pkg.js",
+    "roll-minify": "rollup -c rollup.min.js",
+    "gendts": "dts-bundle-generator -o lib/index.d.ts src/index.ts"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "author": "jeremy coleman",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "@types/node": "^10.12.18",
+    "@types/react": "^16.7.18",
+    "@types/react-dom": "16.0.11",
+    "css-tree": "^1.0.0-alpha.29",
+    "dts-bundle-generator": "2.0.0",
+    "fs-jetpack": "^2.2.0",
+    "glob": "^7.1.3",
+    "gulp": "^4.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.2",
+    "lodash": "^4.17.11",
+    "node-sass": "^4.11.0",
+    "prettier": "^1.15.3",
+    "rollup": "1.1.0",
+    "rollup-plugin-auto-external": "2.0.0",
+    "rollup-plugin-terser": "4.0.1",
+    "rollup-plugin-typescript2": "0.18.1",
+    "tslib": "1.9.3",
+    "typescript": "^3.2.2"
+  }
+}

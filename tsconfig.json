@@ -1,0 +1,23 @@
+{
+    "compilerOptions": {
+        "outDir": "lib",
+        "baseUrl": ".",
+        "paths":{
+            "@uifabric/*":["./src/@uifabric/*"]
+        },
+        "noImplicitAny": false,
+        "moduleResolution": "node",
+        "declaration": false,
+        "target": "esnext",
+        "module": "esnext",
+        "allowJs": false,
+        "jsx": "react",
+        "experimentalDecorators": true,
+        "lib": ["dom","scripthost","esnext"],
+        "skipLibCheck": true,
+        "removeComments": true
+    },
+    "files":["src/index.ts"],
+    "include": ["src"],
+    "exclude": ["node_modules"]
+}

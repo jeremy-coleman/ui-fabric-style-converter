@@ -1,0 +1,11 @@
+:global .ms-PersonaExample .ms-Persona {
+  margin: 0 0 10px 0; }
+
+:global .ms-JobIconExample {
+  margin-right: 5px; }
+
+:global .exampleLabel {
+  margin: 10px 0; }
+
+:global .customExampleCoin img {
+  border-radius: 20px; }

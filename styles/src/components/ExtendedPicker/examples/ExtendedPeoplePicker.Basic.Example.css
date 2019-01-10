@@ -1,0 +1,33 @@
+/*
+  Your use of the content in the files referenced here is subject to the terms of the license at http://aka.ms/fabric-assets-license
+*/
+/*
+    Common CSS property mixins with support for RTL.
+    Use these mixins when you want to automatically create RTL versions of your properties.
+    They are in alphabetical order (a-z).
+*/
+/* Base slots */
+/* Input controls */
+/* Buttons */
+/* Menus */
+/* Lists */
+/* Base slots */
+/* Input controls */
+/* Buttons */
+/* Menus */
+/* Lists */
+:global .ms-PeoplePicker {
+  width: 100%; }
+
+:global .ms-SearchBoxSmallExample {
+  width: 208px; }
+
+.headerItem {
+  border-bottom: 1px solid "[theme:neutralLight, default: #eaeaea]";
+  height: 30px;
+  padding-left: 12px; }
+
+.footerItem {
+  border-top: 1px solid "[theme:neutralLight, default: #eaeaea]";
+  height: 60px;
+  padding-left: 12px; }

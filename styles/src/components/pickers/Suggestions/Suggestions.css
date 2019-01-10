@@ -1,0 +1,165 @@
+/*
+  Your use of the content in the files referenced here is subject to the terms of the license at http://aka.ms/fabric-assets-license
+*/
+/*
+    Common CSS property mixins with support for RTL.
+    Use these mixins when you want to automatically create RTL versions of your properties.
+    They are in alphabetical order (a-z).
+*/
+/* Base slots */
+/* Input controls */
+/* Buttons */
+/* Menus */
+/* Lists */
+/* Base slots */
+/* Input controls */
+/* Buttons */
+/* Menus */
+/* Lists */
+.root {
+  min-width: 260px; }
+
+.suggestionsItem {
+  display: flex;
+  align-items: stretch;
+  box-sizing: border-box;
+  width: 100%;
+  position: relative; }
+  .suggestionsItem:hover {
+    background: "[theme:neutralLighter, default: #f4f4f4]"; }
+    .suggestionsItem:hover .closeButton {
+      display: block; }
+  .suggestionsItem.suggestionsItemIsSuggested {
+    background: "[theme:neutralLight, default: #eaeaea]"; }
+    .suggestionsItem.suggestionsItemIsSuggested:hover {
+      background: "[theme:neutralTertiaryAlt, default: #c8c8c8]"; }
+      @media screen and (-ms-high-contrast: active) {
+        .suggestionsItem.suggestionsItemIsSuggested:hover {
+          background: Highlight;
+          color: HighlightText; } }
+    @media screen and (-ms-high-contrast: active) {
+      .suggestionsItem.suggestionsItemIsSuggested {
+        background: Highlight;
+        color: HighlightText;
+        -ms-high-contrast-adjust: none; } }
+    .suggestionsItem.suggestionsItemIsSuggested .closeButton:hover {
+      background: "[theme:neutralTertiary, default: #a6a6a6]";
+      color: "[theme:neutralPrimary, default: #333333]"; }
+    @media screen and (-ms-high-contrast: active) {
+      .suggestionsItem.suggestionsItemIsSuggested .itemButton {
+        color: HighlightText; } }
+  .suggestionsItem .closeButton {
+    display: none;
+    color: "[theme:neutralSecondary, default: #666666]"; }
+    .suggestionsItem .closeButton:hover {
+      background: "[theme:neutralLight, default: #eaeaea]"; }
+
+.actionButton {
+  background: none;
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+  margin: 0;
+  position: relative;
+  border-top: 1px solid "[theme:neutralLight, default: #eaeaea]";
+  height: 40px;
+  width: 100%;
+  font-size: 12px; }
+  [dir='ltr'] .actionButton {
+    padding-left: 8px; }
+  [dir='rtl'] .actionButton {
+    padding-right: 8px; }
+  [dir='ltr'] .actionButton {
+    text-align: left; }
+  [dir='rtl'] .actionButton {
+    text-align: right; }
+  .actionButton:hover {
+    background-color: "[theme:neutralLight, default: #eaeaea]";
+    cursor: pointer; }
+  .actionButton:focus, .actionButton:active {
+    background-color: "[theme:themeLight, default: #c7e0f4]"; }
+  .actionButton :global(.ms-Button-icon) {
+    font-size: 16px;
+    width: 25px; }
+  .actionButton :global(.ms-Button-label) {
+    margin: 0 4px 0 9px; }
+    html[dir='rtl'] .actionButton :global(.ms-Button-label) {
+      margin: 0 9px 0 4px; }
+
+.buttonSelected {
+  background-color: "[theme:themeLight, default: #c7e0f4]"; }
+
+.suggestionsTitle {
+  padding: 0 12px;
+  color: "[theme:themePrimary, default: #0078d4]";
+  font-size: 12px;
+  line-height: 40px;
+  border-bottom: 1px solid "[theme:neutralLight, default: #eaeaea]"; }
+
+.suggestionsContainer {
+  overflow-y: auto;
+  overflow-x: hidden;
+  max-height: 300px;
+  border-bottom: 1px solid "[theme:neutralLight, default: #eaeaea]"; }
+
+.suggestionsNone {
+  text-align: center;
+  color: "[theme:info, default: #666666]";
+  font-size: 12px;
+  line-height: 30px; }
+
+.suggestionsSpinner {
+  margin: 5px 0;
+  white-space: nowrap;
+  line-height: 20px;
+  font-size: 12px; }
+  html[dir='ltr'] .suggestionsSpinner {
+    padding-left: 14px; }
+  html[dir='rtl'] .suggestionsSpinner {
+    padding-right: 14px; }
+  html[dir='ltr'] .suggestionsSpinner {
+    text-align: left; }
+  html[dir='rtl'] .suggestionsSpinner {
+    text-align: right; }
+  .suggestionsSpinner :global(.ms-Spinner-circle) {
+    display: inline-block;
+    vertical-align: middle; }
+  .suggestionsSpinner :global(.ms-Spinner-label) {
+    display: inline-block;
+    margin: 0px 10px 0 16px;
+    vertical-align: middle; }
+    html[dir='rtl'] .suggestionsSpinner :global(.ms-Spinner-label) {
+      margin: 0px 16px 0 10px; }
+
+.itemButton.itemButton {
+  width: 100%;
+  padding: 0px;
+  /* once this is converted to js css, then specificity won't be an issue. */
+  height: 100%; }
+  @media screen and (-ms-high-contrast: active) {
+    .itemButton.itemButton {
+      color: WindowText; } }
+  .itemButton.itemButton:hover {
+    color: "[theme:neutralDark, default: #212121]"; }
+
+.closeButton.closeButton {
+  /* once this is converted to js css, then specificity won't be an issue. */
+  padding: 0 4px;
+  height: auto;
+  width: 32px; }
+  @media screen and (-ms-high-contrast: active) {
+    .closeButton.closeButton {
+      color: WindowText; } }
+  .closeButton.closeButton:hover {
+    background: "[theme:neutralTertiaryAlt, default: #c8c8c8]";
+    color: "[theme:neutralDark, default: #212121]"; }
+
+.suggestionsAvailable {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0; }

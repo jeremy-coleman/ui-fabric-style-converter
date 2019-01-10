@@ -1,0 +1,42 @@
+/*
+  Your use of the content in the files referenced here is subject to the terms of the license at http://aka.ms/fabric-assets-license
+*/
+/*
+    Common CSS property mixins with support for RTL.
+    Use these mixins when you want to automatically create RTL versions of your properties.
+    They are in alphabetical order (a-z).
+*/
+/* Base slots */
+/* Input controls */
+/* Buttons */
+/* Menus */
+/* Lists */
+/* Base slots */
+/* Input controls */
+/* Buttons */
+/* Menus */
+/* Lists */
+.root {
+  overflow-y: auto;
+  max-height: inherit;
+  height: inherit;
+  -webkit-overflow-scrolling: touch; }
+
+.stickyAbove,
+.stickyBelow {
+  position: absolute;
+  pointer-events: auto;
+  width: 100%;
+  z-index: 1; }
+
+.stickyAbove {
+  top: 0; }
+  @media screen and (-ms-high-contrast: active) {
+    .stickyAbove {
+      border-bottom: 1px solid WindowText; } }
+
+.stickyBelow {
+  bottom: 0; }
+  @media screen and (-ms-high-contrast: active) {
+    .stickyBelow {
+      border-top: 1px solid WindowText; } }

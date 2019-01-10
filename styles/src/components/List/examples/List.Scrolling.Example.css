@@ -1,0 +1,51 @@
+/*
+  Your use of the content in the files referenced here is subject to the terms of the license at http://aka.ms/fabric-assets-license
+*/
+/*
+    Common CSS property mixins with support for RTL.
+    Use these mixins when you want to automatically create RTL versions of your properties.
+    They are in alphabetical order (a-z).
+*/
+/* Base slots */
+/* Input controls */
+/* Buttons */
+/* Menus */
+/* Lists */
+/* Base slots */
+/* Input controls */
+/* Buttons */
+/* Menus */
+/* Lists */
+:global .ms-ListScrollingExample-container {
+  overflow: auto;
+  max-height: 500px;
+  margin-top: 20px; }
+
+:global .ms-ListScrollingExample-itemCell .ms-ListScrollingExample-itemContent {
+  font-size: 14px;
+  font-weight: 400;
+  box-sizing: border-box;
+  box-shadow: none;
+  margin: 0;
+  padding: 0;
+  *zoom: 1;
+  position: relative;
+  display: block;
+  border-left: 3px solid "[theme:themePrimary, default: #0078d4]";
+  padding-left: 27px; }
+  :global .ms-ListScrollingExample-itemCell .ms-ListScrollingExample-itemContent::before, :global .ms-ListScrollingExample-itemCell .ms-ListScrollingExample-itemContent::after {
+    display: table;
+    content: '';
+    line-height: 0; }
+  :global .ms-ListScrollingExample-itemCell .ms-ListScrollingExample-itemContent::after {
+    clear: both; }
+  :global .ms-ListScrollingExample-itemCell .ms-ListScrollingExample-itemContent-odd {
+    height: 50px;
+    line-height: 50px;
+    background: "[theme:neutralLighter, default: #f4f4f4]"; }
+  :global .ms-ListScrollingExample-itemCell .ms-ListScrollingExample-itemContent-even {
+    height: 25px;
+    line-height: 25px; }
+
+:global .ms-ListScrollingExample-selected {
+  background: lightblue; }

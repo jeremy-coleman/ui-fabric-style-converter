@@ -1,0 +1,41 @@
+/*
+  Your use of the content in the files referenced here is subject to the terms of the license at http://aka.ms/fabric-assets-license
+*/
+/*
+    Common CSS property mixins with support for RTL.
+    Use these mixins when you want to automatically create RTL versions of your properties.
+    They are in alphabetical order (a-z).
+*/
+/* Base slots */
+/* Input controls */
+/* Buttons */
+/* Menus */
+/* Lists */
+/* Base slots */
+/* Input controls */
+/* Buttons */
+/* Menus */
+/* Lists */
+:global .ms-FocusZoneExamples-photoList {
+  display: inline-block;
+  border: 1px solid "[theme:neutralTertiary, default: #a6a6a6]";
+  padding: 10px;
+  line-height: 0;
+  overflow: hidden; }
+
+:global .ms-FocusZoneExamples-photoCell {
+  position: relative;
+  display: inline-block;
+  padding: 2px;
+  box-sizing: border-box; }
+  :global .ms-FocusZoneExamples-photoCell:focus {
+    outline: none; }
+    :global .ms-FocusZoneExamples-photoCell:focus:after {
+      content: '';
+      position: absolute;
+      right: 4px;
+      left: 4px;
+      top: 4px;
+      bottom: 4px;
+      border: 1px solid white;
+      outline: 2px solid "[theme:themePrimary, default: #0078d4]"; }
