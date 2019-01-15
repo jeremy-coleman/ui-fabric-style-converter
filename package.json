@@ -2,17 +2,18 @@
   "name": "ui-fabric-style-converter",
   "version": "0.0.1",
   "description": "dom styles to fabric jss",
-  "main": "lib/index.js",
+  "main": "lib/lib.cjs.js",
+  "module": "lib/lib.es.js",
   "typings": "lib/index.d.ts",
   "types": "lib/index.d.ts",
-  "files": ["lib"],
+  "files": [
+    "lib"
+  ],
   "scripts": {
     "tsdev": "tsc -w --noEmit",
-    "build": "yarn rollit && yarn gendts",
-    "tsout": "tsc",
-    "transpile-temp": "tsc --outDir _temp",
-    "rollit": "rollup -c rollup.pkg.js",
-    "roll-minify": "rollup -c rollup.min.js",
+    "build": "yarn rollm && yarn gendts",
+    "rollm": "tsc --outDir _TEMP && rollup -c rollup.min.js && rollup -c rollup.debug.js",
+    "wp": "webpack --config=webpack.config.js --mode=production",
     "gendts": "dts-bundle-generator -o lib/index.d.ts src/index.ts"
   },
   "publishConfig": {
@@ -23,6 +24,7 @@
   "dependencies": {},
   "devDependencies": {
     "@types/node": "^10.12.18",
+    "@types/prop-types": "^15.5.8",
     "@types/react": "^16.7.18",
     "@types/react-dom": "16.0.11",
     "css-tree": "^1.0.0-alpha.29",
@@ -32,15 +34,29 @@
     "gulp": "^4.0.0",
     "gulp-concat": "^2.6.1",
     "gulp-rename": "^1.4.0",
+    "gulp-rollup": "^2.16.2",
     "gulp-sass": "^4.0.2",
+    "gulp-typescript": "^5.0.0",
     "lodash": "^4.17.11",
     "node-sass": "^4.11.0",
     "prettier": "^1.15.3",
+    "prop-types": "^15.6.2",
+    "react": "16.7.0",
+    "react-dom": "16.7.0",
     "rollup": "1.1.0",
+    "rollup-plugin-alias": "^1.5.1",
     "rollup-plugin-auto-external": "2.0.0",
+    "rollup-plugin-node-resolve": "^4.0.0",
     "rollup-plugin-terser": "4.0.1",
+    "rollup-plugin-tsc": "^1.1.15",
+    "rollup-plugin-typescript": "^1.0.0",
     "rollup-plugin-typescript2": "0.18.1",
-    "tslib": "1.9.3",
-    "typescript": "^3.2.2"
+    "ts-loader": "^5.3.3",
+    "tsconfig-paths-webpack-plugin": "^3.2.0",
+    "tslib": "^1.9.3",
+    "typescript": "^3.2.2",
+    "webpack": "^4.28.4",
+    "webpack-cli": "^3.2.1",
+    "webpack-node-externals": "^1.7.2"
   }
 }

@@ -3,7 +3,10 @@ import { IProcessedStyleSet, IStyleSet, ITheme, mergeStyleSets } from '@uifabric
 //import {  IStyleFunctionOrObject } from '@uifabric/utilities';
 import { Customizations, CustomizerContext, ICustomizerContext } from '@uifabric/utilities';
 
-import { assign } from './utilities';
+//import { assign } from './utilities';
+
+const {assign} = Object
+
 import { IStyleFunctionOrObject } from '@uifabric/merge-styles/IStyleFunction';
 
 //export type Omit<T, K extends keyof T> = Pick<T, Exclude<keyof T, K>>;
