@@ -1,0 +1,1 @@
+{"code":"export const isIOS = () => {\r\n    if (!window || !window.navigator || !window.navigator.userAgent) {\r\n        return false;\r\n    }\r\n    return /iPad|iPhone|iPod/i.test(window.navigator.userAgent);\r\n};\r\n"}

@@ -1,0 +1,1 @@
+{"code":"export const DefaultSpacing = {\r\n    s2: '4px',\r\n    s1: '8px',\r\n    m: '16px',\r\n    l1: '20px',\r\n    l2: '32px'\r\n};\r\n"}

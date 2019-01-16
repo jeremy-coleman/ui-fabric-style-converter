@@ -1,0 +1,1 @@
+{"code":"export function hasHorizontalOverflow(element) {\r\n    return element.clientWidth < element.scrollWidth;\r\n}\r\nexport function hasVerticalOverflow(element) {\r\n    return element.clientHeight < element.scrollHeight;\r\n}\r\nexport function hasOverflow(element) {\r\n    return hasHorizontalOverflow(element) || hasVerticalOverflow(element);\r\n}\r\n"}

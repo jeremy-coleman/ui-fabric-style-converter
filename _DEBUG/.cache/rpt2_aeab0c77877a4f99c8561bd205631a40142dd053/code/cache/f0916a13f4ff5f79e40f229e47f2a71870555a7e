@@ -1,0 +1,1 @@
+{"code":"let isMacResult;\r\nexport function isMac(reset) {\r\n    if (typeof isMacResult === 'undefined' || reset) {\r\n        const userAgent = typeof window !== 'undefined' && window.navigator.userAgent;\r\n        isMacResult = !!userAgent && userAgent.indexOf('Macintosh') !== -1;\r\n    }\r\n    return !!isMacResult;\r\n}\r\n"}

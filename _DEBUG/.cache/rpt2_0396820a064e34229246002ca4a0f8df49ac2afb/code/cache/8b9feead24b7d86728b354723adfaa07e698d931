@@ -1,0 +1,1 @@
+{"code":"import { buildClassMap } from '../utilities/index';\r\nimport { DefaultFontStyles } from '../styles/index';\r\nexport const FontClassNames = buildClassMap(DefaultFontStyles);\r\n"}

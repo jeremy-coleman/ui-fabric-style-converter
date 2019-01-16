@@ -12,15 +12,14 @@ devDeps.concat(peerDeps).concat(pkgDeps)
 
 export default {
     external: devDeps,
-    input: '_TEMP/index.js',
+    input: '_DEBUG/es/index.js',
 	output: [
-		{file: `lib/debug.js`, format: "es", sourcemap: false},
-		// {file: `lib/office-ui-fabric-react.mjs`, format: "es", sourcemap: false},
-		// {file: `lib/office-ui-fabric-react.cjs.js`, format: "cjs", sourcemap: false},
+		{file: `_DEBUG/bundle.js`, format: "es", sourcemap: false},
 	],
 	plugins: [
         typescript({
 			check: false,
+			cacheRoot: "./_DEBUG/.cache",
             typescript: require('typescript'),
         }),
         autoExternal(),

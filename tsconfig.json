@@ -2,6 +2,7 @@
     "compilerOptions": {
         "outDir": "./lib",
         "baseUrl": "./src",
+        "rootDir": "./src",
         "moduleResolution": "node",
         "target": "esnext",
         "module":"esnext",
@@ -10,7 +11,8 @@
         "importHelpers": true,
         "allowSyntheticDefaultImports": true,
         "lib": ["dom","scripthost","esnext"],
-        "skipLibCheck": true
+        "skipLibCheck": true,
+        "removeComments": true
     },
     "include":["src"]
 }

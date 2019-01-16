@@ -1,0 +1,1 @@
+{"code":"export function hoistStatics(source, dest) {\r\n    for (const name in source) {\r\n        if (source.hasOwnProperty(name)) {\r\n            dest[name] = source[name];\r\n        }\r\n    }\r\n    return dest;\r\n}\r\n"}

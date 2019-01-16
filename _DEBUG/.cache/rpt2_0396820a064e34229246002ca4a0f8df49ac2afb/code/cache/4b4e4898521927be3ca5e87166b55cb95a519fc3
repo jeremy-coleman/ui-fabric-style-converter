@@ -1,0 +1,1 @@
+{"code":"import { setVersion } from '@uifabric/set-version';\r\nsetVersion('@uifabric/utilities', '6.27.2');\r\n"}

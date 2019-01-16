@@ -1,0 +1,1 @@
+{"code":"export function getItem(key) {\r\n    let result = null;\r\n    try {\r\n        result = window.sessionStorage.getItem(key);\r\n    }\r\n    catch (e) {\r\n    }\r\n    return result;\r\n}\r\nexport function setItem(key, data) {\r\n    try {\r\n        window.sessionStorage.setItem(key, data);\r\n    }\r\n    catch (e) {\r\n    }\r\n}\r\n"}

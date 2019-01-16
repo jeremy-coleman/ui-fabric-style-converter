@@ -1,0 +1,1 @@
+{"code":"export const DefaultEffects = {\r\n    elevation4: { boxShadow: '0 0 5px 0 rgba(0,0,0,.4)' },\r\n    elevation8: { boxShadow: '0 0 5px 0 rgba(0,0,0,.4)' },\r\n    elevation16: { boxShadow: '0 0 5px 0 rgba(0,0,0,.4)' },\r\n    elevation64: { boxShadow: '0 0 5px 0 rgba(0,0,0,.4)' },\r\n    roundedCorner2: 0\r\n};\r\n"}

@@ -1,0 +1,1 @@
+{"code":"import { setVersion } from '@uifabric/set-version';\r\nsetVersion('@uifabric/merge-styles', '6.15.0');\r\n"}

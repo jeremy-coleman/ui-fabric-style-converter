@@ -1,9 +1,0 @@
-.editingInput {
-  border: 0px;
-  outline: none;
-  width: 100%; }
-  .editingInput::-ms-clear {
-    display: none; }
-
-.editingContainer {
-  margin: 4px; }

@@ -10,10 +10,15 @@
     "lib"
   ],
   "scripts": {
+    "bundle": "run-p bundle-*",
+    "bundle-webpack-loser": "webpack --config=webpack.normal.js --progress",
+    "bundle-webpack-average": "webpack --config=webpack.average.js --progress",
+    "bundle-webpack-winner": "webpack --config=webpack.winner.js --progress",
+    "bundle-webpack-winner2": "webpack --config=webpack.winner2.js --progress",
+    "bundle-terser": "node minify",
+    "bundle-rollup-minify": "rollup -c rollup.minify.js",
+    "prebundle": "tsc --outDir _DEBUG/es --removeComments && rollup -c rollup.debug.js",
     "tsdev": "tsc -w --noEmit",
-    "build": "yarn rollm && yarn gendts",
-    "rollm": "tsc --outDir _TEMP && rollup -c rollup.min.js && rollup -c rollup.debug.js",
-    "wp": "webpack --config=webpack.config.js --mode=production",
     "gendts": "dts-bundle-generator -o lib/index.d.ts src/index.ts"
   },
   "publishConfig": {
@@ -21,7 +26,6 @@
   },
   "author": "jeremy coleman",
   "license": "MIT",
-  "dependencies": {},
   "devDependencies": {
     "@types/node": "^10.12.18",
     "@types/prop-types": "^15.5.8",
@@ -36,6 +40,7 @@
     "gulp-rename": "^1.4.0",
     "gulp-rollup": "^2.16.2",
     "gulp-sass": "^4.0.2",
+    "gulp-terser": "^1.1.7",
     "gulp-typescript": "^5.0.0",
     "lodash": "^4.17.11",
     "node-sass": "^4.11.0",
@@ -46,17 +51,23 @@
     "rollup": "1.1.0",
     "rollup-plugin-alias": "^1.5.1",
     "rollup-plugin-auto-external": "2.0.0",
+    "rollup-plugin-babel": "^4.3.0",
     "rollup-plugin-node-resolve": "^4.0.0",
     "rollup-plugin-terser": "4.0.1",
     "rollup-plugin-tsc": "^1.1.15",
     "rollup-plugin-typescript": "^1.0.0",
     "rollup-plugin-typescript2": "0.18.1",
+    "rollupify": "^0.5.1",
+    "terser": "^3.14.1",
+    "terser-webpack-plugin": "1.2.1",
     "ts-loader": "^5.3.3",
     "tsconfig-paths-webpack-plugin": "^3.2.0",
+    "tsify": "^4.0.1",
     "tslib": "^1.9.3",
     "typescript": "^3.2.2",
     "webpack": "^4.28.4",
     "webpack-cli": "^3.2.1",
-    "webpack-node-externals": "^1.7.2"
+    "webpack-node-externals": "^1.7.2",
+    "webpack-stream": "^5.2.1"
   }
 }

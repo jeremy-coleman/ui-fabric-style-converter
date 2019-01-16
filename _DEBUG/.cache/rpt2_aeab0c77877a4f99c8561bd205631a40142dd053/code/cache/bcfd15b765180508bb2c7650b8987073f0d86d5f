@@ -1,0 +1,1 @@
+{"code":"export function createRef() {\r\n    const refObject = ((element) => {\r\n        refObject.current = element;\r\n    });\r\n    Object.defineProperty(refObject, 'value', {\r\n        get() {\r\n            return refObject.current;\r\n        }\r\n    });\r\n    refObject.current = null;\r\n    return refObject;\r\n}\r\n"}

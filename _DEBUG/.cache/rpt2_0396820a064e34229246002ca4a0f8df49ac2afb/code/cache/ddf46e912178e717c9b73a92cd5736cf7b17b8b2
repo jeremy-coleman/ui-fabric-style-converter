@@ -1,0 +1,1 @@
+{"code":"import { styleToClassName } from './styleToClassName';\r\nimport { extractStyleParts } from './extractStyleParts';\r\nexport function mergeStyles(...args) {\r\n    const { classes, objects } = extractStyleParts(args);\r\n    if (objects.length) {\r\n        classes.push(styleToClassName(objects));\r\n    }\r\n    return classes.join(' ');\r\n}\r\n"}

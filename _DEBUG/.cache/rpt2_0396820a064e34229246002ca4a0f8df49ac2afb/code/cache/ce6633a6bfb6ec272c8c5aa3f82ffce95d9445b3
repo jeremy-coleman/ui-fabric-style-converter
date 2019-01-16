@@ -1,0 +1,1 @@
+{"code":"let _baseUrl = '';\r\nexport function getResourceUrl(url) {\r\n    return _baseUrl + url;\r\n}\r\nexport function setBaseUrl(baseUrl) {\r\n    _baseUrl = baseUrl;\r\n}\r\n"}

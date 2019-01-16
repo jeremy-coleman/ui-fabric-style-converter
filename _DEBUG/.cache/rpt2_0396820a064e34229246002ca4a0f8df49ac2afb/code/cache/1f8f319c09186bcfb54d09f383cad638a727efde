@@ -1,0 +1,1 @@
+{"code":"export const normalize = {\r\n    boxShadow: 'none',\r\n    margin: 0,\r\n    padding: 0,\r\n    boxSizing: 'border-box'\r\n};\r\nexport const noWrap = {\r\n    overflow: 'hidden',\r\n    textOverflow: 'ellipsis',\r\n    whiteSpace: 'nowrap'\r\n};\r\n"}

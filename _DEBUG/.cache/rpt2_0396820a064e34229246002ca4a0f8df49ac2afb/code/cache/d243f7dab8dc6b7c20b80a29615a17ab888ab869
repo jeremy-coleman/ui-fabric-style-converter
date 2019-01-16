@@ -1,0 +1,1 @@
+{"code":"import { Stylesheet } from './Stylesheet';\r\nimport { serializeRuleEntries } from './styleToClassName';\r\nexport function fontFace(font) {\r\n    Stylesheet.getInstance().insertRule(`@font-face{${serializeRuleEntries(font)}}`, true);\r\n}\r\n"}

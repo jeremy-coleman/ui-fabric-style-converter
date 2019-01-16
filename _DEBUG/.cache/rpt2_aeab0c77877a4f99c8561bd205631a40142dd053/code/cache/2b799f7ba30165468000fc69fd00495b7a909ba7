@@ -1,0 +1,1 @@
+{"code":"export function mergeAriaAttributeValues(...ariaAttributes) {\r\n    const mergedAttribute = ariaAttributes.filter((arg) => arg !== undefined && arg !== null).join('');\r\n    return mergedAttribute === '' ? undefined : mergedAttribute;\r\n}\r\n"}
